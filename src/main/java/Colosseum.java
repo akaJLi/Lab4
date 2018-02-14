@@ -79,10 +79,11 @@ public class Colosseum {
         tempPokemon.hitPoints = myScan.nextInt();
         if (tempPokemon.hitPoints < 1 || tempPokemon.hitPoints > MAX_HIT_POINTS) {
             while (true) {
-            System.out.print("Sorry. Hit points must be between 1 and 50:");
-            tempPokemon.hitPoints = myScan.nextInt();
-            if (tempPokemon.hitPoints < 1 || tempPokemon.hitPoints > MAX_HIT_POINTS) {
-                break;
+                System.out.print("Sorry. Hit points must be between 1 and 50:");
+                tempPokemon.hitPoints = myScan.nextInt();
+                if (tempPokemon.hitPoints < 1 || tempPokemon.hitPoints > MAX_HIT_POINTS) {
+                    break;
+                }
             }
         }
         System.out.print("Split fifty points between attack level and defense level");
